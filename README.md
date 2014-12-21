@@ -10,8 +10,8 @@ The data set has been stored in the `UCI HAR Dataset/` directory.
 In case the previously mentioned directory do no exists, the original file will be downloaded and extracted
 The `unzip` function is used to extract the zip file in this directory.
 ```
-fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileUrl, destfile = "Dataset.zip", method = "curl")
+fileUrl <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+download.file(fileUrl, destfile = "Dataset.zip")
 unzip("Dataset.zip")
 ```
 
