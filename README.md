@@ -40,7 +40,6 @@ trainData_act$V1 <- factor(trainData_act$V1,levels=activities$V1,labels=activiti
 
 Each data frame of the data set is labeled - using the `features.txt` - with the information about the variables used on the feature vector. The `Activity` and `Subject` columns are also named properly before merging them to the test and train dataset.
 
-```
 features <- read.table("./UCI HAR Dataset/features.txt",header=FALSE,colClasses="character")
 colnames(testData)<-features$V2
 colnames(trainData)<-features$V2
